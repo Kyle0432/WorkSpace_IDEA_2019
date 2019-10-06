@@ -1,0 +1,32 @@
+#这里的---分割线表示文档块,下面表示为每一个文档块定义它是什么环境下的配置
+server:
+  port: 8081
+#这里表示的是来激活下面的哪个文档块开发环境,如果不激活就默认是上面的这个8081的
+spring:
+  profiles:
+    active:dev
+---
+server:
+  port: 8082
+spring:
+  profiles:dev
+---
+server:
+  port: 8083
+spring:
+  profiles:prod
+
+
+#person:
+#  lastName: 张三
+#  age: 20
+#  boss: true
+#  birth: 2019/9/18
+#  maps: {k1: v1,k2: v2}
+#  lists:
+#    - 李四
+#    - 赵六
+#  dog:
+#    name: 柒柒
+#    age: 1
+

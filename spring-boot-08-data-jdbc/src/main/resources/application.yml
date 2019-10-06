@@ -1,0 +1,32 @@
+#配置数据库相关信息,这里需要注意,如果用springboot2.x它导入的mysql启动默认是8.xx的
+#而mysql6以上的driver-class-name就应该和原来不一样,mysql6以下是driver-class-name: com.mysql.jdbc.Driver
+#mysql6或者以上是driver-class-name:com.mysql.cj.jdbc.Driver,而此时我们应该去pom文件里面指定mysql的版本
+#因为在本机安装的是mysql5的版本,所以在pom文件里面也应该指定mysql5,否则就会出错
+spring:
+  datasource:
+    username: root
+    password: mysqladmin
+    url: jdbc:mysql://localhost:3306/springboot-jdbc
+    driver-class-name: com.mysql.jdbc.Driver
+    #默认是用的tomcat的数据源,现在切换用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    #    schema:
+    #      - classpath:department.sql
+

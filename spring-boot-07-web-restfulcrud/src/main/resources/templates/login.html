@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Signin Template for Bootstrap</title>
+<!--		${}一般用来获取传来的值-->
+<!--		@{}一般用来显示路径的-->
+<!--		#{}一般用来完成国际化的-->
+		<!-- Bootstrap core CSS -->      <!--这里的th:href 表示是引入webjars下面的bootstrap依赖替换掉原生href,th:href的好处是随着项目的访问名而改变,项目名的改变th:href就无需加上项目名-->
+		<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.css}" rel="stylesheet">
+		<!-- Custom styles for this template -->   <!--这里的th:href 是引入static静态文件夹下的资源替换掉原生href-->
+		<link href="asserts/css/signin.css" th:href="@{/asserts/css/signin.css}" rel="stylesheet">
+	</head>
+	<body class="text-center">
+<!--	th:action="@{/user/login}"这里表示的是提交到/user/login这个地址-->
+		<form class="form-signin" action="dashboard.html" th:action="@{/user/login}" method="post">
+			                  <!--这里的 th:src就是图片的路径替换掉原生src-->
+			<img class="mb-4" th:src="@{/asserts/img/bootstrap-solid.svg}" src="asserts/img/bootstrap-solid.svg" alt="" width="72" height="72">
+<!--			th:text="#{login.tip}"表示的是获取国际化-->
+			<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
+			<!--判断-->
+<!--			th:if的优先级高于th:text,所以会先执行th:if,符合th:if里面条件之后再去th:text-->
+			<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+			<label class="sr-only" th:text="#{login.username}">Username</label>
+			<input type="text"  name="username" class="form-control" placeholder="Username" th:placeholder="#{login.username}" required="" autofocus="">
+			<label class="sr-only" th:text="#{login.password}">Password</label>
+			<input type="password" name="password" class="form-control" placeholder="Password" th:placeholder="#{login.password}" required="">
+			<div class="checkbox mb-3">
+				<label>
+          			<input type="checkbox" value="remember-me"/> [[#{login.remember}]]
+        		</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.btn}">Sign in</button>
+			<p class="mt-5 mb-3 text-muted">© 2018-2019</p>
+<!--			th:href="@{/index.html(l='zh_CN')}"表示点击链接会带上l='zh_CN' 例如localhost:8080/crud/index.html?l=zh_CN-->
+			<a class="btn btn-sm" th:href="@{/login.html(l='zh_CN')}">中文</a>
+			<a class="btn btn-sm" th:href="@{/login.html(l='en_US')}">English</a>
+		</form>
+	</body>
+
+</html>

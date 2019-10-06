@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-23-actuator" />
+        <module name="spring-boot-17-dubbo-provider-ticket" />
+        <module name="spring-boot-15-task" />
+        <module name="spring-boot-14-elasticsearch" />
+        <module name="spring-boot-06-logging" />
+        <module name="spring-boot-01-helloworld" />
+        <module name="spring-boot-16-security" />
+        <module name="spring-boot-05-config-autoconfig" />
+        <module name="spring-boot-19-springcloud-eureka-server" />
+        <module name="spring-boot-18-dubbo-consumer-user" />
+        <module name="spring-boot-21-dsdsds" />
+        <module name="spring-boot-08-data-jdbc" />
+        <module name="spring-boot-07-web-restfulcrud" />
+        <module name="spring-boot-10-data-jpa" />
+        <module name="spring-boot-12-cache" />
+        <module name="spring-boot-02-helloworld-quick" />
+        <module name="spring-boot-22-deploy-tools" />
+        <module name="spring-boot-13-amqp" />
+        <module name="spring-boot-21-springcloud-consumer-user" />
+        <module name="spring-boot-09-mybatis" />
+        <module name="spring-boot-04-config-plus" />
+        <module name="mavendemo" />
+        <module name="spring-boot-03-config" />
+        <module name="spring-boot-20-springcloud-provider-ticket" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mavendemo" target="1.8" />
+      <module name="spring-boot-01-helloworld" target="1.8" />
+      <module name="spring-boot-02-helloworld-quick" target="1.8" />
+      <module name="spring-boot-03-config" target="1.8" />
+      <module name="spring-boot-04-config-plus" target="1.8" />
+      <module name="spring-boot-05-config-autoconfig" target="1.8" />
+      <module name="spring-boot-06-logging" target="1.8" />
+      <module name="spring-boot-07-web-restfulcrud" target="1.8" />
+      <module name="spring-boot-08-data-jdbc" target="1.8" />
+      <module name="spring-boot-09-mybatis" target="1.8" />
+      <module name="spring-boot-10-data-jpa" target="1.8" />
+      <module name="spring-boot-12-cache" target="1.8" />
+      <module name="spring-boot-13-amqp" target="1.8" />
+      <module name="spring-boot-14-elasticsearch" target="1.8" />
+      <module name="spring-boot-15-task" target="1.8" />
+      <module name="spring-boot-16-security" target="1.8" />
+      <module name="spring-boot-17-dubbo-provider-ticket" target="1.8" />
+      <module name="spring-boot-18-dubbo-consumer-user" target="1.8" />
+      <module name="spring-boot-19-springcloud-eureka-server" target="1.8" />
+      <module name="spring-boot-20-springcloud-provider-ticket" target="1.8" />
+      <module name="spring-boot-21-dsdsds" target="1.8" />
+      <module name="spring-boot-21-springcloud-consumer-user" target="1.8" />
+      <module name="spring-boot-22-deploy-tools" target="1.8" />
+      <module name="spring-boot-23-actuator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mavendemo" options="-parameters" />
+      <module name="spring-boot-01-helloworld" options="-parameters" />
+      <module name="spring-boot-02-helloworld-quick" options="-parameters" />
+      <module name="spring-boot-03-config" options="-parameters" />
+      <module name="spring-boot-04-config-plus" options="-parameters" />
+      <module name="spring-boot-05-config-autoconfig" options="-parameters" />
+      <module name="spring-boot-06-logging" options="-parameters" />
+      <module name="spring-boot-07-web-restfulcrud" options="-parameters" />
+      <module name="spring-boot-08-data-jdbc" options="-parameters" />
+      <module name="spring-boot-09-mybatis" options="-parameters" />
+      <module name="spring-boot-10-data-jpa" options="-parameters" />
+      <module name="spring-boot-12-cache" options="-parameters" />
+      <module name="spring-boot-13-amqp" options="-parameters" />
+      <module name="spring-boot-14-elasticsearch" options="-parameters" />
+      <module name="spring-boot-15-task" options="-parameters" />
+      <module name="spring-boot-16-security" options="-parameters" />
+      <module name="spring-boot-17-dubbo-provider-ticket" options="-parameters" />
+      <module name="spring-boot-18-dubbo-consumer-user" options="-parameters" />
+      <module name="spring-boot-19-springcloud-eureka-server" options="-parameters" />
+      <module name="spring-boot-20-springcloud-provider-ticket" options="-parameters" />
+      <module name="spring-boot-21-dsdsds" options="-parameters" />
+      <module name="spring-boot-21-springcloud-consumer-user" options="-parameters" />
+      <module name="spring-boot-22-deploy-tools" options="-parameters" />
+      <module name="spring-boot-23-actuator" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>成功</h3>
+<!--    th:text 将div里面的文本内容进行设置, 这里设置的内容是从controller传过来的数据-->
+<!--    如果直接访问显示的就是div里面的111内容,如果经过模板引擎显示的就是controller传来的数据-->
+    <div th:text="${hello}">111</div>
+<!--    原生属性值就会被替换掉,也就是class会被th:class的替换掉-->
+    <div id="div" class="myDiv"  th:class="${hello}" th:id="${hello}"></div>
+<!--     th:text会转义字符-->
+    <div th:text="${hello}"></div>
+<!--   th:utext 不会转义特殊字符,h1就当成本意变成大标题-->
+    <div th:utext="${hello}"></div>
+    <hr/>
+<!--    th:each="" 每次遍历都会生成当前这个标签    效果3个h3-->
+    <h3 th:text="${user}" th:each="user:${users}"></h3>
+    <hr/>
+<!--    在标签体里面遍历可以这样写[[${user}]]    3个span-->
+    <h3>
+        <span th:each="user :${users}">[[${user}]]</span>
+    </h3>
+</body>
+</html>

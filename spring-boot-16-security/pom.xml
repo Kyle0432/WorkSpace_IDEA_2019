@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.kyle</groupId>
+    <artifactId>spring-boot-16-security</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-16-security</name>
+    <description>Demo project for Spring Boot</description>
+
+    <!--<properties>这里面就是去修改覆盖parent里面依赖版本号的在里面修改好版本号
+         如果要修改版本还需要在dependencies里面引入该依赖,因为版本号在properties定义了就不需要写了-->
+    <properties>
+        <java.version>1.8</java.version>
+        <!--由于自动引入的thymelef版本会很低,所以这里需要进行切换
+        这里的版本都是父工程里面的版本,所以可以进行修改它,并且还需要些该依赖-->
+        <!--<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+        <thymeleaf-layout-dialect.version>2.3.0</thymeleaf-layout-dialect.version>
+        <thymeleaf-extras-springsecurity.version>3.0.4.RELEASE</thymeleaf-extras-springsecurity.version>-->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <!--这里的版本要么和自动引入的thymeleaf版本相同要么更高-->
+            <!--<version>3.0.11.RELEASE</version>-->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+            <!--引入SpringSecurity依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

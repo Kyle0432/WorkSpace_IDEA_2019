@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/mavendemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-01-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-02-helloworld-quick" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-03-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-04-config-plus" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-05-config-autoconfig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-06-logging" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-07-web-restfulcrud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-08-data-jdbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-09-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-10-data-jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-12-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-13-amqp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-14-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-15-task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-16-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-17-dubbo-provider-ticket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-18-dubbo-consumer-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-19-springcloud-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-20-springcloud-provider-ticket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-21-springcloud-consumer-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-22-deploy-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-23-actuator" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mavendemo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-01-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-02-helloworld-quick/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-03-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-04-config-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-05-config-autoconfig/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-06-logging/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-07-web-restfulcrud/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-08-data-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-09-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-10-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-12-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-13-amqp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-14-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-15-task/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-16-security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-17-dubbo-provider-ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-18-dubbo-consumer-user/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-19-springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-20-springcloud-provider-ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-21-springcloud-consumer-user/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-22-deploy-tools/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-23-actuator/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
